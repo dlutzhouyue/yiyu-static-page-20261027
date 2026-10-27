@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个关于想法、创作与探索的个人空间。">
+  <meta name="theme-color" content="#f4f2ea">
+  <title>一隅 · 让想法发生</title>
+  <style>
+    :root{--paper:#f4f2ea;--ink:#243d32;--muted:#627068;--accent:#dd5936;--line:#cdd3c7}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:6px}.wrap{width:min(1160px,88%);margin:auto}
+    header{display:flex;align-items:center;justify-content:space-between;padding:27px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:2px;font-size:23px}.brand span{color:var(--accent)}nav{display:flex;gap:30px;font-size:14px}nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:55px;padding:80px 0 75px}.eyebrow{font-size:12px;letter-spacing:3px;font-weight:700;display:flex;align-items:center;gap:10px}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}h1{font-size:clamp(45px,5.8vw,76px);letter-spacing:-3px;line-height:1.24;margin:25px 0}h1 em{font-style:normal;color:var(--accent)}.intro{max-width:410px;color:var(--muted);font-size:16px;margin-bottom:30px}.button{display:inline-flex;gap:30px;align-items:center;background:var(--ink);color:white;border-radius:5px;padding:13px 23px;font-size:14px}.button:hover{background:#355342}.note{font-size:12px;color:var(--muted);margin-top:18px}
+    .art{position:relative;border-radius:180px 180px 8px 8px;overflow:hidden;background:#e4e8dc;aspect-ratio:1/1.08}.art svg{display:block;width:100%;height:100%}.art-label{position:absolute;bottom:20px;left:24px;font:11px monospace;letter-spacing:2px;color:#fff}.stamp{position:absolute;right:20px;bottom:20px;font-size:26px;color:white}
+    .section-top{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:26px;margin-bottom:26px}.section-top h2{font-size:23px;margin:0}.section-top span{font-size:11px;letter-spacing:2px;color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:70px}.project{border-bottom:1px solid var(--line);padding-bottom:18px}.project small{color:var(--muted);font-size:11px;letter-spacing:1px}.project h3{font-size:22px;margin:12px 0 8px}.project p{font-size:14px;color:var(--muted);margin:0 0 14px}.project summary{cursor:pointer;font-size:13px;list-style:none;display:flex;justify-content:space-between}.project summary::-webkit-details-marker{display:none}.project summary:after{content:'+';color:var(--accent)}.project details[open] summary:after{content:'−'}.project details p{margin-top:14px;font-size:13px}
+    .about{display:grid;grid-template-columns:1fr 1.7fr;gap:35px;background:#e8ebdf;padding:35px 40px;margin-bottom:55px;border-radius:6px}.about h2{font-size:25px;margin:0}.about p{font-size:14px;color:#4e6156;margin:0}.about p+p{margin-top:12px}code{font-size:13px;background:#d9e0d1;padding:2px 6px;border-radius:3px}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:22px 0 30px;font-size:11px;color:var(--muted)}
+    @media(max-width:760px){.wrap{width:88%}header{padding:20px 0}nav{gap:18px}.hero{grid-template-columns:1fr;padding:45px 0;gap:35px}h1{letter-spacing:-2px}.art{width:100%;max-width:440px;justify-self:center;aspect-ratio:1/1}.projects{grid-template-columns:1fr;gap:25px;margin-bottom:40px}.section-top span{letter-spacing:0;font-size:10px}.about{grid-template-columns:1fr;padding:25px;gap:15px;margin-bottom:35px}footer{flex-direction:column;gap:5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#home" aria-label="一隅首页">一隅<span> /</span></a>
+      <nav aria-label="主导航"><a href="#ideas">灵感集</a><a href="#about">关于这里 ↗</a></nav>
+    </header>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>A LITTLE SPACE FOR BIG IDEAS</div>
+          <h1 id="hero-title">给想法一隅，<br>让<em>有趣</em>发生。</h1>
+          <p class="intro">把好奇心变成作品，把日常的发现留在这里。一个安静的角落，一些正在生长的可能。</p>
+          <a class="button" href="#ideas">逛逛灵感集 <span aria-hidden="true">↗</span></a>
+          <p class="note">保持好奇 · 慢慢创造 · 随时出发</p>
+        </div>
+        <div class="art">
+          <svg viewBox="0 0 500 540" role="img" aria-label="橙色太阳下，通往拱门的绿色阶梯插画" preserveAspectRatio="xMidYMid slice">
+            <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#bcc7b7" stroke-width=".6"/></pattern><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e4e8dc"/><stop offset="1" stop-color="#d0d9c5"/></linearGradient></defs>
+            <path fill="url(#sky)" d="M0 0h500v540H0z"/><path fill="url(#grid)" d="M0 0h500v540H0z"/>
+            <circle cx="335" cy="155" r="78" fill="#dd5936"/><circle cx="335" cy="155" r="95" fill="none" stroke="#dd5936" stroke-opacity=".3"/>
+            <path d="M0 340Q100 275 195 334T500 303V540H0Z" fill="#a6b69b"/>
+            <path d="M130 410V240a110 110 0 0 1 220 0v170Z" fill="#53735d"/><path d="M180 410V246a60 60 0 0 1 120 0v164Z" fill="#203e32"/>
+            <path d="M180 410V246a60 60 0 0 1 60-60v224Z" fill="#345442"/>
+            <path d="M0 450h500v90H0Z" fill="#385744"/><path d="M160 385h160v25H160Z" fill="#e7ddbc"/><path d="M140 410h200v28H140Z" fill="#d2c8a8"/><path d="M120 438h240v30H120Z" fill="#bfb697"/><path d="M100 468h280v32H100Z" fill="#aca286"/><path d="M80 500h320v40H80Z" fill="#968f76"/>
+            <path d="M43 228h26m-13-13v26M426 267h18m-9-9v18" stroke="#53735d" stroke-width="2"/>
+            <path d="M391 422c-10-44 14-78 39-87-1 37-12 67-39 87Z" fill="#78946a"/><path d="M391 444v-44" stroke="#b3c29e" stroke-width="3"/>
+          </svg>
+          <span class="art-label">ROOM FOR POSSIBILITY / 001</span><span class="stamp" aria-hidden="true">✳</span>
+        </div>
+      </section>
+      <section id="ideas" aria-labelledby="ideas-title">
+        <div class="section-top"><h2 id="ideas-title">一些小小的开始</h2><span>IDEAS IN PROGRESS / 示例内容</span></div>
+        <div class="projects">
+          <article class="project"><small>01 / OBSERVE</small><h3>收集日常的光</h3><p>留意一片树影、一扇窗，以及那些容易错过的瞬间。</p><details><summary>展开灵感</summary><p>试着每天留下一张照片，配上一句观察。这里可以替换为你的摄影集、旅行记录或生活随笔。</p></details></article>
+          <article class="project"><small>02 / CREATE</small><h3>把灵感做出来</h3><p>一个小工具，一张插画，或者第一个属于自己的网页。</p><details><summary>展开灵感</summary><p>从一个能完成的小项目开始。这里可以展示你的设计作品、程序项目或正在尝试的新技能。</p></details></article>
+          <article class="project"><small>03 / EXPLORE</small><h3>去看看更远的地方</h3><p>为未知留一个位置，让下一次尝试多一点惊喜。</p><details><summary>展开灵感</summary><p>写下一个想探索的问题，记录尝试的过程。这里可以放你的阅读笔记、研究方向或未来计划。</p></details></article>
+        </div>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title"><h2 id="about-title">你好，这是我的一隅。</h2><div><p>这是一个可以自由修改的个人主页示例。你可以把它变成作品集、项目介绍，或一张发给朋友的数字名片。</p><p>开始使用：用文本编辑器打开 <code>index.html</code>，替换标题和介绍，保存后刷新页面即可。</p></div></section>
+    </main>
+    <footer><span>一隅 / 个人主页示例 · 所有文案均可自由修改</span><span>留一点空间，给下一份好奇。 ↗</span></footer>
+  </div>
+</body>
+</html>
